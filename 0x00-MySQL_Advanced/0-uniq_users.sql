@@ -1,8 +1,7 @@
---Creates holberton db
-CREATE DATABASE holberton;
---Creates a table called users
-IF NOT EXISTS(SELECT 1 FROM information_schema.tables WHERE table_schema = 'holberton' AND table_name = 'users') THEN
-	CREATE TABLE users(id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
-                           email VARCHAR (255) NOT NULL UNIQUE, 
-                           name VARCHAR(255)
-                          );
+--Drop table if already created
+DROP TABLE IF EXISTS users;
+--Create table
+CREATE TABLE IF NOT EXISTS users(id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+                   email VARCHAR (255) NOT NULL UNIQUE, 
+                   name VARCHAR(255)
+                  );
