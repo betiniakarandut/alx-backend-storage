@@ -1,2 +1,2 @@
-# Script to list databases present
-show databases
+// Script to list databases present
+show dbs;
