@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env python3
 """Module for 12-log_stats.py"""
 from pymongo import MongoClient
 from typing import List
