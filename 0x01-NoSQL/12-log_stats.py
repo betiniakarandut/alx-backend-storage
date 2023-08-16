@@ -17,4 +17,3 @@ for method in methods:
     method = collection.document_counts({"methods": method})
     print(f"\tmethod {method}: {method_count}")
     print(f"{status} status check")
-
