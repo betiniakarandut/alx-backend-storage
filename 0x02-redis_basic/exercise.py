@@ -14,6 +14,6 @@ class Cache:
         self._redis.flushdb()
 
     def store(self, data: Any) -> str:
-        key = str(uuid.uuid1())
+        key: str = str(uuid.uuid1())
         self._redis.set(key, data)
         return key
